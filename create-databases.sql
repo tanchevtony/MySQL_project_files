@@ -20,16 +20,16 @@ CREATE TABLE `clients` (
   `name` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL,
   `city` varchar(50) NOT NULL,
-  `state` char(2) NOT NULL,
+  `county` varchar(50) NOT NULL,
   `phone` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`client_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `clients` VALUES (1,'Vinte','3 Nevada Parkway','Syracuse','NY','315-252-7305');
-INSERT INTO `clients` VALUES (2,'Myworks','34267 Glendale Parkway','Huntington','WV','304-659-1170');
-INSERT INTO `clients` VALUES (3,'Yadel','096 Bitterne Road','San Francisco','CA','415-144-6037');
-INSERT INTO `clients` VALUES (4,'Kwideo','81674 Park Gate Circle','Waco','TX','254-750-0784');
-INSERT INTO `clients` VALUES (5,'Topiclounge','0863 London Road','Portland','OR','971-888-9129');
-INSERT INTO `clients` VALUES (6,'Cilenia','100 Newton Road','Portland','OR','971-888-9129');
+INSERT INTO `clients` VALUES (1,'Vinte','3 Stockton Road','Exeter','Devon','315-252-7305');
+INSERT INTO `clients` VALUES (2,'Myworks','342 Barton Road','Borough','Durham','304-659-1170');
+INSERT INTO `clients` VALUES (3,'Yadel','096 Bitterne Road','Southampton','Hampshire','415-144-6037');
+INSERT INTO `clients` VALUES (4,'Kwideo','81674 Park Gate Road','Bath','Somerset','254-750-0784');
+INSERT INTO `clients` VALUES (5,'Topiclounge','0863 London Road','Truro','Cornwall','971-888-9129');
+INSERT INTO `clients` VALUES (6,'Cilenia','100 Newton Road','Rochester','Kent','971-888-9129');
 
 CREATE TABLE `invoices` (
   `invoice_id` int(11) NOT NULL,
@@ -130,20 +130,20 @@ CREATE TABLE `customers` (
   `phone` varchar(50) DEFAULT NULL,
   `address` varchar(50) NOT NULL,
   `city` varchar(50) NOT NULL,
-  `state` char(2) NOT NULL,
+  `county` varchar(50) NOT NULL,
   `points` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`customer_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `customers` VALUES (1,'Babara','MacCaffrey','1986-03-28','781-932-9754','0 Sage Terrace','Waltham','MA',2273);
-INSERT INTO `customers` VALUES (2,'Ines','Brushfield','1986-04-13','804-427-9456','14187 Commercial Trail','Hampton','VA',947);
-INSERT INTO `customers` VALUES (3,'Freddi','Boagey','1985-02-07','719-724-7869','251 Springs Junction','Colorado Springs','CO',2967);
-INSERT INTO `customers` VALUES (4,'Ambur','Roseburgh','1974-04-14','407-231-8017','30 Arapahoe Terrace','Orlando','FL',457);
-INSERT INTO `customers` VALUES (5,'Clemmie','Betchley','1973-11-07',NULL,'5 Spohn Circle','Arlington','TX',3675);
-INSERT INTO `customers` VALUES (6,'Elka','Twiddell','1991-09-04','312-480-8498','7 Manley Drive','Chicago','IL',3073);
-INSERT INTO `customers` VALUES (7,'Ilene','Dowson','1964-08-30','615-641-4759','50 Lillian Crossing','Nashville','TN',1672);
-INSERT INTO `customers` VALUES (8,'Thacher','Naseby','1993-07-17','941-527-3977','538 Mosinee Center','Sarasota','FL',205);
-INSERT INTO `customers` VALUES (9,'Romola','Rumgay','1992-05-23','559-181-3744','3520 Ohio Trail','Visalia','CA',1486);
-INSERT INTO `customers` VALUES (10,'Levy','Mynett','1969-10-13','404-246-3370','68 Lawn Avenue','Atlanta','GA',796);
+INSERT INTO `customers` VALUES (1,'Babara','MacCaffrey','1986-03-28','781-932-9754','0 Sage Terrace','Durham','Durham',2273);
+INSERT INTO `customers` VALUES (2,'Ines','Brushfield','1986-04-13','804-427-9456','14187 Commercial Trail','Southampton','Hampshire',947);
+INSERT INTO `customers` VALUES (3,'Freddi','Boagey','1985-02-07','719-724-7869','251 Springs Junction','Truro','Cornwall',2967);
+INSERT INTO `customers` VALUES (4,'Ambur','Roseburgh','1974-04-14','407-231-8017','30 Arapahoe Terrace','Maidstone','Kent',457);
+INSERT INTO `customers` VALUES (5,'Clemmie','Betchley','1973-11-07',NULL,'5 Spohn Circle','Horsham','West Sussex',3675);
+INSERT INTO `customers` VALUES (6,'Elka','Twiddell','1991-09-04','312-480-8498','7 Manley Drive','Guildford','Surrey',3073);
+INSERT INTO `customers` VALUES (7,'Ilene','Dowson','1964-08-30','615-641-4759','50 Lillian Crossing','Poole','Dorset',1672);
+INSERT INTO `customers` VALUES (8,'Thacher','Naseby','1993-07-17','941-527-3977','538 Mosinee Center','Torquay','Devon',205);
+INSERT INTO `customers` VALUES (9,'Romola','Rumgay','1992-05-23','559-181-3744','3520 Ohio Trail','Bristol','Bristol',1486);
+INSERT INTO `customers` VALUES (10,'Levy','Mynett','1969-10-13','404-246-3370','68 Lawn Avenue','Bath','Somerset',796);
 
 
 CREATE TABLE `order_statuses` (
@@ -236,16 +236,16 @@ CREATE TABLE `offices` (
   `state` varchar(50) NOT NULL,
   PRIMARY KEY (`office_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `offices` VALUES (1,'03 Reinke Trail','Cincinnati','OH');
-INSERT INTO `offices` VALUES (2,'5507 Becker Terrace','New York City','NY');
-INSERT INTO `offices` VALUES (3,'54 Northland Court','Richmond','VA');
-INSERT INTO `offices` VALUES (4,'08 South Crossing','Cincinnati','OH');
-INSERT INTO `offices` VALUES (5,'553 Maple Drive','Minneapolis','MN');
-INSERT INTO `offices` VALUES (6,'23 North Plaza','Aurora','CO');
-INSERT INTO `offices` VALUES (7,'9658 Wayridge Court','Boise','ID');
-INSERT INTO `offices` VALUES (8,'9 Grayhawk Trail','New York City','NY');
-INSERT INTO `offices` VALUES (9,'16862 Westend Hill','Knoxville','TN');
-INSERT INTO `offices` VALUES (10,'4 Bluestem Parkway','Savannah','GA');
+INSERT INTO `offices` VALUES (1,'03 Reinke Trail','Torbay','Devon');
+INSERT INTO `offices` VALUES (2,'55 Becker Terrace','Truro','Cornwall');
+INSERT INTO `offices` VALUES (3,'54 Northland Court','Bath','Somerset');
+INSERT INTO `offices` VALUES (4,'08 South Crossing','Poole','Dorset');
+INSERT INTO `offices` VALUES (5,'55 Maple Drive','Eastleigh','Hampshire');
+INSERT INTO `offices` VALUES (6,'23 North Plaza','Bristol','Bristol');
+INSERT INTO `offices` VALUES (7,'96 Wayridge Court','Durham','Durham');
+INSERT INTO `offices` VALUES (8,'9 Grayhawk Trail','London','Greater London');
+INSERT INTO `offices` VALUES (9,'16 Westend Hill','Halton','Cheshire');
+INSERT INTO `offices` VALUES (10,'4 Bluestem Parkway','Ipswich','Suffolk');
 
 
 
