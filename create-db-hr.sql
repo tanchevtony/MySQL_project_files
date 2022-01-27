@@ -10,16 +10,16 @@ CREATE TABLE `offices` (
   `state` varchar(50) NOT NULL,
   PRIMARY KEY (`office_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `offices` VALUES (1,'03 Reinke Trail','Cincinnati','OH');
-INSERT INTO `offices` VALUES (2,'5507 Becker Terrace','New York City','NY');
-INSERT INTO `offices` VALUES (3,'54 Northland Court','Richmond','VA');
-INSERT INTO `offices` VALUES (4,'08 South Crossing','Cincinnati','OH');
-INSERT INTO `offices` VALUES (5,'553 Maple Drive','Minneapolis','MN');
-INSERT INTO `offices` VALUES (6,'23 North Plaza','Aurora','CO');
-INSERT INTO `offices` VALUES (7,'9658 Wayridge Court','Boise','ID');
-INSERT INTO `offices` VALUES (8,'9 Grayhawk Trail','New York City','NY');
-INSERT INTO `offices` VALUES (9,'16862 Westend Hill','Knoxville','TN');
-INSERT INTO `offices` VALUES (10,'4 Bluestem Parkway','Savannah','GA');
+INSERT INTO `offices` VALUES (1,'03 Reinke Trail','Torbay','Devon');
+INSERT INTO `offices` VALUES (2,'55 Becker Terrace','Truro','Cornwall');
+INSERT INTO `offices` VALUES (3,'54 Northland Court','Bath','Somerset');
+INSERT INTO `offices` VALUES (4,'08 South Crossing','Poole','Dorset');
+INSERT INTO `offices` VALUES (5,'55 Maple Drive','Eastleigh','Hampshire');
+INSERT INTO `offices` VALUES (6,'23 North Plaza','Bristol','Bristol');
+INSERT INTO `offices` VALUES (7,'96 Wayridge Court','Durham','Durham');
+INSERT INTO `offices` VALUES (8,'9 Grayhawk Trail','London','Greater London');
+INSERT INTO `offices` VALUES (9,'16 Westend Hill','Halton','Cheshire');
+INSERT INTO `offices` VALUES (10,'4 Bluestem Parkway','Ipswich','Suffolk');
 
 
 
