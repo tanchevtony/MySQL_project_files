@@ -13,22 +13,23 @@ CREATE TABLE `payment_methods` (
 INSERT INTO `payment_methods` VALUES (1,'Credit Card');
 INSERT INTO `payment_methods` VALUES (2,'Cash');
 INSERT INTO `payment_methods` VALUES (3,'PayPal');
-INSERT INTO `payment_methods` VALUES (4,'Wire Transfer');
+INSERT INTO `payment_methods` VALUES (4,'Crypto');
 
 CREATE TABLE `clients` (
   `client_id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL,
   `city` varchar(50) NOT NULL,
-  `state` char(2) NOT NULL,
+  `county` varchar(50) NOT NULL,
   `phone` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`client_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-INSERT INTO `clients` VALUES (1,'Vinte','3 Nevada Parkway','Syracuse','NY','315-252-7305');
-INSERT INTO `clients` VALUES (2,'Myworks','34267 Glendale Parkway','Huntington','WV','304-659-1170');
-INSERT INTO `clients` VALUES (3,'Yadel','096 Pawling Parkway','San Francisco','CA','415-144-6037');
-INSERT INTO `clients` VALUES (4,'Kwideo','81674 Westerfield Circle','Waco','TX','254-750-0784');
-INSERT INTO `clients` VALUES (5,'Topiclounge','0863 Farmco Road','Portland','OR','971-888-9129');
+INSERT INTO `clients` VALUES (1,'Vinte','3 Stockton Road','Exeter','Devon','315-252-7305');
+INSERT INTO `clients` VALUES (2,'Myworks','342 Barton Road','Borough','Durham','304-659-1170');
+INSERT INTO `clients` VALUES (3,'Yadel','096 Bitterne Road','Southampton','Hampshire','415-144-6037');
+INSERT INTO `clients` VALUES (4,'Kwideo','81674 Park Gate Road','Bath','Somerset','254-750-0784');
+INSERT INTO `clients` VALUES (5,'Topiclounge','0863 London Road','Truro','Cornwall','971-888-9129');
+INSERT INTO `clients` VALUES (6,'Cilenia','100 Newton Road','Rochester','Kent','971-888-9129');
 
 CREATE TABLE `invoices` (
   `invoice_id` int(11) NOT NULL,
